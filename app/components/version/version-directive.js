@@ -2,7 +2,7 @@
 
 'use strict';
 
-    angular.module('myApp.version.version-directive', [])
+    angular.module('directiveModule', ['versionModule'])
 
     .directive('appVersion', ['version', function(version) {
         return function(scope, elm, attrs) {
