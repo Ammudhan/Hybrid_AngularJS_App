@@ -3,7 +3,6 @@ import { UpgradeModule } from '@angular/upgrade/static';
 import { downgradeInjectable, downgradeComponent } from '@angular/upgrade/static';
 
 import { AppModule } from './app.module';
-//import { NameParser } from "./admin/nameParser.service";
 
 declare var angular: angular.IAngularStatic;
 
