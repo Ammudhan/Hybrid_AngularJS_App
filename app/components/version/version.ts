@@ -5,6 +5,6 @@
     angular.module('versionModule', [
         'filterModule',
         'directiveModule'
-    ]).value('version', '0.5');
+    ]).value('version', '0.8');
 
 })();

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+
 </head>
 <body>
 <ul class="menu">
@@ -23,7 +24,8 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<my-app></my-app>
+<!--<my-app></my-app>-->
+<div ng-view></div>
 
 <div>Angular seed app: v<span app-version></span></div>
 
@@ -33,10 +35,9 @@
 
 <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
-<script type="text/javascript" src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 <script type="text/javascript" src="/common.bundle.js"></script>
-<script type="text/javascript" src="/vendor.bundle.js"></script>
-<script type="text/javascript" src="/polyfills.bundle.js"></script>
 <script type="text/javascript" src="/ng1.bundle.js"></script>
+
 </body>
 </html>
