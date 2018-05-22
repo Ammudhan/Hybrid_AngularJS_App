@@ -9,7 +9,7 @@ const ENV = process.env.NODE_ENV = process.env.ENV = 'development';
 module.exports = {
 
     entry: {
-        //'polyfills': './app/polyfills.ts',
+        'polyfills': './app/polyfills.ts',
         'vendor': './app/vendor.ts',
         'app': './app/main.ts',
         'ng1': './app/index.ts'
