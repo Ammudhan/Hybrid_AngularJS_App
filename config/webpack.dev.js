@@ -9,8 +9,11 @@ const ENV = process.env.NODE_ENV = process.env.ENV = 'development';
 module.exports = {
 
     entry: {
-        'app': './app/launcher.ts',
+        //'polyfills': './app/polyfills.ts',
+        'vendor': './app/vendor.ts',
+        'app': './app/main.ts',
         'ng1': './app/index.ts'
+        //'app': './app/launcher.ts'
     },
 
     output: {
@@ -64,6 +67,12 @@ module.exports = {
             'process.env': {
                'ENV': JSON.stringify(ENV)
             }
-        })
+        }),
+
+        new webpack.ContextReplacementPlugin(
+            /angular(\\|\/)core(\\|\/)@angular/,
+            helpers.root('./src'),
+            {}
+        )
     ]
 };

@@ -1,10 +1,9 @@
-import { Component }  from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-
   template: `
-    <div ng-view></div>
+    <div class="ng-view"></div>
   `
 })
 export class AppComponent {

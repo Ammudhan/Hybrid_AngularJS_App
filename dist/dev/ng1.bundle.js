@@ -1,22 +1,22 @@
 webpackJsonp([2],{
 
-/***/ 510:
+/***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(511);
-__webpack_require__(512);
-__webpack_require__(514);
-__webpack_require__(516);
-__webpack_require__(517);
-__webpack_require__(518);
+__webpack_require__(156);
+__webpack_require__(157);
+__webpack_require__(159);
+__webpack_require__(161);
+__webpack_require__(162);
+__webpack_require__(163);
 
 
 /***/ }),
 
-/***/ 511:
+/***/ 156:
 /***/ (function(module, exports) {
 
 (function () {
@@ -36,7 +36,7 @@ __webpack_require__(518);
 
 /***/ }),
 
-/***/ 512:
+/***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
 (function () {
@@ -44,7 +44,7 @@ __webpack_require__(518);
     angular.module('primaryModule', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/view1', {
-                template: __webpack_require__(513),
+                template: __webpack_require__(158),
                 controller: 'View1Ctrl'
             });
         }])
@@ -55,14 +55,14 @@ __webpack_require__(518);
 
 /***/ }),
 
-/***/ 513:
+/***/ 158:
 /***/ (function(module, exports) {
 
 module.exports = "<p>This is the partial for view 1.</p>\n";
 
 /***/ }),
 
-/***/ 514:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 (function () {
@@ -70,7 +70,7 @@ module.exports = "<p>This is the partial for view 1.</p>\n";
     angular.module('secondaryModule', ['ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/view2', {
-                template: __webpack_require__(515),
+                template: __webpack_require__(160),
                 controller: 'View2Ctrl'
             });
         }])
@@ -81,14 +81,14 @@ module.exports = "<p>This is the partial for view 1.</p>\n";
 
 /***/ }),
 
-/***/ 515:
+/***/ 160:
 /***/ (function(module, exports) {
 
 module.exports = "<p>This is the partial for view 2.</p>\n<p>\n  Showing of 'interpolate' filter:\n  {{ 'Current version is v%VERSION%.' | interpolate }}\n</p>\n";
 
 /***/ }),
 
-/***/ 516:
+/***/ 161:
 /***/ (function(module, exports) {
 
 (function () {
@@ -96,13 +96,13 @@ module.exports = "<p>This is the partial for view 2.</p>\n<p>\n  Showing of 'int
     angular.module('versionModule', [
         'filterModule',
         'directiveModule'
-    ]).value('version', '0.5');
+    ]).value('version', '0.8');
 })();
 
 
 /***/ }),
 
-/***/ 517:
+/***/ 162:
 /***/ (function(module, exports) {
 
 (function () {
@@ -118,7 +118,7 @@ module.exports = "<p>This is the partial for view 2.</p>\n<p>\n  Showing of 'int
 
 /***/ }),
 
-/***/ 518:
+/***/ 163:
 /***/ (function(module, exports) {
 
 (function () {
@@ -134,5 +134,5 @@ module.exports = "<p>This is the partial for view 2.</p>\n<p>\n  Showing of 'int
 
 /***/ })
 
-},[510]);
+},[155]);
 //# sourceMappingURL=ng1.bundle.js.map

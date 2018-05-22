@@ -1,8 +1,8 @@
-import { NgModule, forwardRef }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { UpgradeModule } from '@angular/upgrade/static';
 import { AppComponent } from './app.component';
 
 
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    UpgradeModule
   ],
   declarations: [
     AppComponent
@@ -21,4 +22,4 @@ import { AppComponent } from './app.component';
     AppComponent
   ]
 })
-export class AppModule { }
+export class AppModule {}
